@@ -20,7 +20,9 @@ static int digit;
 	}
 	public static void main(String[] args) {
 		
-		int number = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number :");
+		int num = nextInt();
 		digitCount(number);
 	}
 }

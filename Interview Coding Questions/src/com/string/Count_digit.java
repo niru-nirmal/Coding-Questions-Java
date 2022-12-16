@@ -18,11 +18,10 @@ static int digit;
 		System.out.println(count);
 	}
 	}
-	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number :");
-		int num = nextInt();
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                System.out.println("Enter the number :");
+	        int number = Integer.parseInt(br.readLine());
 		digitCount(number);
 	}
 }
